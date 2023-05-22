@@ -1,0 +1,188 @@
+/* for hiding the arrows in Age input field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+body {
+    background: linear-gradient(to bottom, #000000cf, #e64c4ceb);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font: Helvetica, Arial, sans-serif;
+
+}
+
+h1 {
+    margin: 0 auto 40px;
+    color: #fff;
+    font: 20px Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+form {
+    position: relative;
+    display: block;
+}
+    input {
+        font: 18px Helvetica, Arial, sans-serif;
+        box-sizing: border-box;
+        display: block;
+        border: none;
+        padding: 20px;
+        width: 300px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+        
+        &::placeholder {
+        transition: all 0.2s ease-in-out;
+        color: #999;
+        font: 18px Helvetica, Arial, sans-serif;
+        }
+        
+        &:focus, &.populated {
+        padding-top: 28px;
+        padding-bottom: 12px;
+        
+        &::placeholder {
+            color: transparent;
+        }
+    
+        & + span {
+            opacity: 1;
+            top: 10px;
+        }
+        }
+}
+
+.next {
+    transition: all 0.2s ease-in-out;
+    font: 18px Helvetica, Arial, sans-serif;
+    left: 1px;
+
+    position:relative;
+    float: left;
+    width:80px;
+    margin-top:-10px;
+    font-weight:400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    
+
+    box-shadow: 0px 10px 14px -7px #e1d1d1;
+    background:linear-gradient(to bottom, #ff890274 5%, #ff890296 100%);
+    color: white;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #343a3d;
+
+    &:hover {
+    background: #610000;
+    }
+}
+
+li {
+    position:absolute;
+    top:153px;
+    right:-30px;
+    bottom:-25px;
+    list-style:none;
+}
+
+.sub {
+    position:relative;
+    float:right;
+    width:150px;
+    margin-top:10px;
+    color:#fff;
+    font-weight:400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+}
+
+/* modal  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(to bottom, #000000cf, #c84141ba);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    margin: 0;
+    font: 15px Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+.modal-body {
+    padding: 10px;
+}
+
+.modal-footer button {
+    float: right;
+    color: #e50909;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+
+    width:80px;
+    margin-top: -20px;
+    font-weight:400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    
+    box-shadow: 0px 10px 14px -7px #e1d1d1;
+    background:linear-gradient(to bottom, #b2310e 5%, #ff890296 100%);
+    color: white;
+    border-radius:10px;
+    cursor:pointer;
+    padding:5px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #343a3d;
+
+    &:hover {
+    background: #610000;
+    }
+    
+    
+}
+
+.center-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

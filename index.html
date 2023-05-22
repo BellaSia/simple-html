@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple HTML</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/image//title.png" type="image/icon type">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="/index.js"></script>
+</head>
+
+<body>
+  <center> 
+<!-- title -->
+  <h1>Lab Activity 1</h1>
+  <hr/>
+<div>
+<!-- start form  -->
+  <form id="form">
+<!-- Name -->
+    <label for="Name"></label>
+    <input type="text" id="name" placeholder="Name">
+<!-- Age -->
+    <label for="age"></label>
+    <input type="number" style="text-decoration:none" id="age" placeholder="Age">
+<!-- submit button -->
+      <a class="next" data-toggle="modal" data-target="#myModal" onclick="submitForm()">Submit</a>
+
+<!-- modal form to show the output of the form -->
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Thank you for filling out the form.</h1>
+        </div>
+        <br/>
+        <div class="modal-body"></div>
+        <br/>
+        <div class="modal-footer">
+          <button data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+<!-- end of modal -->
+
+<!-- next page button -->
+    <li> 
+      <a class="sub" style="text-decoration:none" href="secondpage.html">Next Page &raquo </a>
+    </li> 
+  </form>
+</div>
+<!-- end form  -->
+<!-- showing the output with javascript -->
+  <br/>
+<!-- show the result below -->
+  <div id="result"></div>
+</center>
+</body>
+</html>
+
+<!-- href, window reload or action or method="get" -->
